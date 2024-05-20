@@ -11,7 +11,7 @@ ENV DB_SERVER="mssql" \
     SKIP_BACKUP_LOG=false \
     PACK="" \
     ZIP_PASSWORD="" \
-    PUSH_REMOTE_MODE="" \
+    PUSH_REMOTE_MODE=""
 
 
 RUN apt-get update && \
