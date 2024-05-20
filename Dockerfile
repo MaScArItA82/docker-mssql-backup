@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/mssql-tools:latest
-LABEL MAINTAINER="BBT Software AG <opensource@bbtsoftware.ch>"
+LABEL MAINTAINER="Mascarita82 <lmmarinop@proton.me>"
 
 ENV DB_SERVER="mssql" \
     DB_USER="SA" \
@@ -12,14 +12,7 @@ ENV DB_SERVER="mssql" \
     PACK="" \
     ZIP_PASSWORD="" \
     PUSH_REMOTE_MODE="" \
-    SMTP_HOST="" \
-    SMTP_PORT="" \
-    SMTP_AUTH="on" \
-    SMTP_USER="" \
-    SMTP_PASS="" \
-    SMTP_FROM="" \
-    SMTP_TLS="on" \
-    MAIL_TO=""    
+
 
 RUN apt-get update && \
     apt-get install -y cron zip msmtp msmtp-mta mailutils && \
